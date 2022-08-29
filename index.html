@@ -85,28 +85,59 @@
 
             </div>
         </Header>
+
+        <main>
+            <article class="container">
+                <div class="left-aside">
+                
+                    <div>
+                        <img src="./images/avatar.png" alt="">
+                    <h3>Alexa Jui</h3>
+                    <p>alexajui@gmail.com</p>
+                    <p>3213 D Street, Columbus, USA</p>
+                    </div>
+
+                   
+                </div>
+                <div class="right-aside">
+                    <h1>Your Credit Cards</h1>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-body">
+                              <h4><b>Credit Card 1</b></h4>
+                              <p>xxxxxxxxxxxx4684</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                              <h4><b>Credit Card 2 (Default)</b></h4>
+                              <p>xxxxxxxxxxxx4242</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                              <h4><b>Credit Card 3</b></h4>
+                              <p>xxxxxxxxxxxx1254</p>
+                            </div>
+                        </div>
+                
+
+                    </div>
+
+                </div>
+
+            </article>
+            <article>
+
+            </article>
+        </main>
     </div>
 
 </body>
 
 
 
-<script>
-
-let dropdown = document.getElementsByClassName("dropdown-btn");
-let i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
+<script src="./index.js">
 </script>
 
 </html>
