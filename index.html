@@ -1,45 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ui Assignment</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <Header>
-        <div class="navbar">
-            <div class="left-content">
-                <p>Balance: <span id="balance">$125</span></p>
 
-            </div>
-            <div class="right-content">
-                <ul>
-                    <li>
-                        <div class="right-content-inner">
-                            <img src="./images/girlr.png" alt="">
-                            <p>Alexa Jui</p>
-                            <button class="arrow-button" ><img src="./images/Vector 97.png" alt="arrow" srcset=""></button>
-                            
-                        </div>
-                        <div class="sub-menu-1">
-                            <ul>
-                                <li><a href="#">My profile</a></li>
-                                <li><a href="#">Add Fund</a></li>
-                                <li><a href="#">API Documentation</a></li>
-                                <li><a href="#">Log Out</a></li>
-                                <li><button class="logout-button"><img src="./images/log-out-Regular.png" alt="" srcset=""><p>Log Out</p></button></li>
-                            </ul>
-    
-                        </div>
-                    </li>
-                    
-                </ul>
+<body>
+    <div>
+        <div class="side-nav">
+            <div class="logo"><img src="./images/logo.png" alt="" srcset=""><br><img src="./images/text.png" alt=""
+                    srcset=""></div>
+            <div class="sub-menu-2">
+                <a href="#"><img src="./images/dash.png" />
+                    <p>Dashboard</p>
+                </a>
+                <a href="#"><img src="./images/search.png" />
+                    <p>Lookup</p>
+                </a>
+                <a href="#"><img src="./images/file.png" />
+                    <p>Files</p>
+                </a>
+            
+
+                    <button class="dropdown-btn"><img src="./images/log.png" />Logs
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Single/Bulk Lookup</a>
+                        <a href="#">Daily Usages</a>
+                    </div>
+
+
+             
+                <a href="#"><img src="./images/buy.png" />
+                    <p>Buy Credits</p>
+                </a>
+                <a href="#"><img src="./images/intigration.png" />
+                    <p>Integration</p>
+                </a>
+                <a href="#"><img src="./images/profile.png" />
+                    <p>My Profile</p>
+                </a>
             </div>
 
         </div>
-    </Header>
-    
+        <Header>
+            <div class="navbar">
+                <div class="left-content">
+                    <p>Balance: <span id="balance">$125</span></p>
+
+                </div>
+                <div class="right-content">
+                    <ul>
+                        <li>
+                            <div class="right-content-inner">
+                                <img src="./images/girlr.png" alt="">
+                                <p>Alexa Jui</p>
+                                <button class="arrow-button"><img src="./images/Vector 97.png" alt="arrow"
+                                        srcset=""></button>
+
+                            </div>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Add Fund</a></li>
+                                    <li><a href="#">API Documentation</a></li>
+                                    <li><a href="#">Log Out</a></li>
+                                    <li><button class="logout-button"><img src="./images/log-out-Regular.png" alt=""
+                                                srcset="">
+                                            <p>Log Out</p>
+                                        </button></li>
+                                </ul>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </Header>
+    </div>
+
 </body>
+
+
+
+<script>
+
+let dropdown = document.getElementsByClassName("dropdown-btn");
+let i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
 </html>

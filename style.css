@@ -12,10 +12,11 @@ body {
 
     background-color: aqua;
     display: flex;
+    height: 90px;
     justify-content: end;
     align-items: center;
     background-color: #000000;
-    padding-right:20px ;
+    padding-right: 20px;
 
 }
 
@@ -100,7 +101,7 @@ body {
 .logout-button {
     width: 160px;
     height: 48px;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,5 +118,122 @@ body {
     font-size: 16px;
     line-height: 28px;
     margin-left: 10px;
-   
+
+}
+
+.side-nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+.logo {
+    /* display: flex; */
+    text-align: center;
+
+}
+
+/* .side-nav div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
+
+.sub-menu-2 {
+    margin-top: 40px;
+}
+
+.sub-menu-2 p {
+    margin-left: 20px;
+}
+
+.side-nav div a {
+    /* padding: 6px 6px 6px 32px; */
+
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+    color: #818181;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.side-nav div button {
+    margin-left: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* .dropdown-container{
+    display: flex;
+    align-items: center;
+}
+.dropdown-container button{
+    border: none;
+    background-color: #000000;
+    margin-left: 80px;
+} */
+.dropdown-btn {
+    /* color:#818181 ;
+    text-decoration: none;
+    border: none;
+    background-color:black; */
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: black;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.dropdown-btn img {
+    margin-right: 20px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px ;
+}
+
+
+.sub-menu-2 a:hover {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    border-right: #FF5E5E;
+    color: white;
+    border-right: 4px solid #FF7901;
+}
+
+.dropdown-btn:hover{
+    border-right: 4px solid #FF7901;
 }
