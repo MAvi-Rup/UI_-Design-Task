@@ -60,13 +60,6 @@ body {
     display: none;
 }
 
-/* .right-content-inner .arrow-button img:hover .sub-menu-1{
-    display: block;
-    background-color: #000000;
-    position: absolute;
-
-} */
-
 .right-content ul li:hover .sub-menu-1 {
     display: block;
     position: absolute;
@@ -329,6 +322,7 @@ body {
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 10px;
 }
 
 .card-1-name {
