@@ -379,8 +379,9 @@ card-2-name {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    border:2px solid #F2F2F4;
- 
+    border: 2px solid #F2F2F4;
+    margin-bottom: 45px;
+
 }
 
 .menu-bar ul {
@@ -396,4 +397,141 @@ card-2-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 28px;
+}
+
+.switch-container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 3%;
+}
+
+.switch-container p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 32px;
+    color: #26262E;
+
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+input:checked+.slider {
+    background-color: #ff7905;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f1eeeb;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #ff7905;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/* .slider::after{
+    background-color: #3b2c1f;
+
+  } */
+/* .slider:checked{
+    background-color: #e28629;
+  }
+   */
+input:checked+.slider {
+    background-color: #ff7700;
+}
+
+input:checked+.slider::before {
+    background-color: #fff6ef;
+}
+
+/* input:focus + .slider {
+    box-shadow: 0 0 1px #ffffff;
+  } */
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+
+    border: 1px solid #FF7901;
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+
+}
+
+.slider.round::after {
+    border-radius: 50%;
+    color: #BDBDBD;
+
+}
+
+.input-container {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-field {
+    width: 350px;
+    height: 60px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+}
+.span-coplor{
+    color: #FF7901;
+}
+
+.input-container p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
 }
